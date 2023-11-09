@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(0deg,#101010,#323232);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    box-shadow: 0px -5px 28px 0px darkcyan;
+}
+
+.logo{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 5vh 0 3vh 2vw;
+    text-shadow: -2px 1px 15px darkturquoise, 1px -1px 10px darkturquoise;
+    text-decoration: overline;
+}
+
+/* #profile-button{
+    position: relative;
+    left: 50%;
+    margin: 4vh 0;
+    background: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border: 1px solid darkturquoise;
+    box-shadow: -1px 1px 6px 1px darkcyan;
+}
+#profile-button:hover{
+    cursor: pointer;
+    box-shadow: -1px 1px 10px 3px darkcyan;
+} */
+
+.acknow{
+    position: relative;
+    left: 22%;
+    margin: 4vh 0;
+    padding: 14px 30px;
+    background: none;
+    font-size: 18px;
+    box-shadow: -1px 1px 6px 1px darkcyan;
+    font-weight: 600;
+}
+
+#logout-button{
+    position: relative;
+    left: 54%;
+    margin: 4vh 0;
+    padding: 14px 30px;
+    background: none;
+    font-size: 18px;
+    border: 1px solid darkturquoise;
+    box-shadow: -1px 1px 6px 1px darkcyan;
+}
+
+#logout-button:hover{
+    cursor: pointer;
+    box-shadow: -1px 1px 10px 3px darkcyan;
+}
+
+.form-container{
+    width: 100%;
+    height: 100%;
+}
+
+.task-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vw;
+    padding: 20px 0;
+    background-color: #080808;
+    height: 42vh;
+    margin: 8vh 0 0vh 0;
+    box-shadow: -2px 2px 12px 4px #101010;
+    border-radius: 4px;
+}
+
+#task-title{
+    width: 45vw;
+    height: 4.5vh;
+    font-size: 22px;
+    padding: 8px 1vw;
+    color: white;
+    background-color: #151515;
+    border: 1px solid darkcyan;
+    box-shadow: -1px 1px 5px 0px darkturquoise;
+}
+
+#task-title:focus{
+    outline: none;
+    border: 1px solid darkturquoise;
+    box-shadow: -1px 1px 5px 1px darkturquoise;
+}
+
+#task-desc{
+    width: 45vw;
+    height: 12vh;
+    font-size: 22px;
+    padding: 8px 1vw;
+    color: white;
+    background-color: #151515;
+    border: 1px solid darkcyan;
+    box-shadow: -1px 1px 5px 0px darkturquoise;
+}
+
+#task-desc:focus{
+    outline: none;
+    border: 1px solid darkturquoise;
+    box-shadow: -1px 1px 5px 1px darkturquoise;
+}
+
+#task-button{
+    width: 10vw;
+    height: 55px;
+    border-radius: 2px;
+    font-size: 18px;
+    background: none;
+    color: black;
+    font-weight: 100;
+    border: 1px solid cyan;
+    text-shadow: -2px 1px 0px darkturquoise, 0px 0px 20px darkturquoise;
+    margin: 1.5vh 0;
+}
+#task-button:hover{
+    background-color: darkturquoise;
+    color: black;
+    text-shadow: -1px 1px 5px black;
+    box-shadow: -1px 1px 8px 2px darkcyan;
+    cursor: pointer;
+}
+
+.all-tasks{
+    background: none;
+    width: 60vw;
+    height: 100vh;
+    position: relative;
+    left: 19.5%;
+}
+
+.one-task{
+    background-color: black;
+    margin: 10vh 0 0 0;
+    align-self: center;
+    box-shadow: -2px 2px 12px 4px #101010;
+}
+
+#updatebtn{
+    position: relative;
+    top: -6.5vh;
+    left: 80%;
+    width: 2vw;
+    height: 28px;
+    border-radius: 2px;
+    font-size: 16px;
+    background: none;
+    color: black;
+    font-weight: 100;
+    border: 1px solid cyan;
+    text-shadow: -2px 1px 0px darkturquoise, 0px 0px 20px darkturquoise;
+}
+
+#deletebtn{
+    position: relative;
+    top: -8vh;
+    left: 84%;
+    width: 5vw;
+    height: 34px;
+    border-radius: 2px;
+    font-size: 17px;
+    background: none;
+    color: black;
+    font-weight: 100;
+    border: 1px solid cyan;
+    text-shadow: -2px 1px 0px darkturquoise, 0px 0px 20px darkturquoise;
+}
+
+#deletebtn:hover{
+    background-color: darkturquoise;
+    color: black;
+    text-shadow: -1px 1px 5px black;
+    box-shadow: -1px 1px 8px 2px darkcyan;
+    cursor: pointer;
+}
+
+#updatebtn:hover{
+    background-color: darkturquoise;
+    color: black;
+    text-shadow: -1px 1px 5px black;
+    box-shadow: -1px 1px 8px 2px darkcyan;
+    cursor: pointer;
+}
+
+.title-description{
+    margin: 5vh 0 0 2vw;
+}
+
+.title{
+    font-size: 2rem;
+}

@@ -1,0 +1,131 @@
+body{
+    background: linear-gradient(0deg,black,#292929);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.8rem;
+    margin: 10vh 0 0 0;
+    letter-spacing: 2px;
+    text-shadow: -2px 1px 15px darkturquoise, 1px -1px 10px darkturquoise
+}
+
+.form-container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 4px yellow;
+    text-align: center;
+    margin: 10vh 0;
+}
+.sign-up-button{
+    width: 25vw;
+    border-radius: 35px;
+    padding: 4px 0px 0px 0px;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    margin: 10vw 0;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-box{
+    width: 25vw;
+    height: 40px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    /* margin-top: 15px;
+    margin-bottom: 30px; */
+    margin: 15px 5vw 30px 5vw;
+    font-size: large;
+    color: white;
+    background-color: #121212;
+    border: none;
+    box-shadow: -2px 2px 8px 2px rgb(10,10,10);
+}
+
+.input-box:hover{
+    box-shadow: -1px 1px 8px 2px darkcyan;
+}
+
+.about-box{
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: large;
+    color: white;
+    background-color: #121212;
+    border: none;
+    box-shadow: -2px 2px 8px 2px rgb(10,10,10);
+}
+
+.about-box:hover{
+    box-shadow: -1px 1px 8px 2px darkcyan;
+}
+
+.select-box{
+    width: 25vw;
+    height: 40px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: large;
+    color: white;
+    background-color: #121212;
+    border: none;
+    box-shadow: -2px 2px 8px 2px rgb(10,10,10);
+}
+
+.dob{
+    width: 25vw;
+    height: 40px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: large;
+    color: white;
+    margin: 0 5vw;
+    background-color: #121212;
+    border: none;
+    box-shadow: -2px 2px 8px 2px rgb(10,10,10);
+}
+
+.dob:hover{
+    box-shadow: -1px 1px 8px 2px darkcyan;
+}
+
+.radio-inline{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: large;
+}
+
+.submit{
+    width: 20vw;
+    height: 55px;
+    border-radius: 2px;
+    font-size: 18px;
+    background: none;
+    color: black;
+    font-weight: 100;
+    border: 1px solid cyan;
+    text-shadow: -2px 1px 0px darkturquoise, 0px 0px 20px darkturquoise;
+    margin-bottom: 5vh;
+}
+.submit:hover{
+    background-color: darkturquoise;
+    color: black;
+    text-shadow: -1px 1px 5px black;
+    box-shadow: -1px 1px 8px 2px darkcyan;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(0deg,black,#292929);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    font-size: 50px;
+    margin: 10vh 0 0 0;
+    letter-spacing: 2px;
+    text-shadow: -2px 1px 15px darkturquoise, 1px -1px 10px darkturquoise;
+    text-decoration: overline;
+}
+
+.form-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sign-up-button{
+    width: 25vw;
+    border-radius: 35px;
+    padding: 4px 0px 0px 0px;
+}
+.text{
+    color: white;
+    font-size: 20px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-box{
+    width: 25vw;
+    height: 40px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    font-size: large;
+    color: white;
+    background-color: #121212;
+    border: none;
+    box-shadow: -2px 2px 8px 2px rgb(10,10,10);
+}
+
+.input-box:hover{
+    box-shadow: -1px 1px 8px 2px darkcyan;
+}
+
+.submit{
+    width: 15vw;
+    height: 55px;
+    border-radius: 2px;
+    font-size: 18px;
+    background: none;
+    color: black;
+    font-weight: 100;
+    border: 1px solid cyan;
+    text-shadow: -2px 1px 0px darkturquoise, 0px 0px 20px darkturquoise;
+    margin-bottom: 5vh;
+}
+.submit:hover{
+    background-color: darkturquoise;
+    color: black;
+    text-shadow: -1px 1px 5px black;
+    box-shadow: -1px 1px 8px 2px darkcyan;
+}

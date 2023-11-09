@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK BUDDY</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="form-container">
+        <nav class="navbar">
+            <li><h1 class="logo">TASK BUDDY</h1></li>
+            <li class="acknow">Welcome <%= name %></li>
+            <li id="logout-button"><a href="/logout" style="text-decoration: none; color: darkturquoise;">LOGOUT</a></li>
+        </nav>
+        <div class="task-container">
+            <form class="task-box" method="POST">
+                <input type="text" name="title" id="task-title" placeholder="TITLE"/>
+                <br>
+                <textarea name="description" id="task-desc" cols="30" rows="5" placeholder="DESCRIPTION"></textarea>
+                <br>
+                <button id="task-button" type="submit">ADD TASK</button>
+            </form>
+        </div>
+        <br> 
+    </div>
+
+</body>
+</html>

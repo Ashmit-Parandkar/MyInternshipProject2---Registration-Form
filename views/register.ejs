@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 class="logo">TASK BUDDY</h1>
+        <br>
+        <h3 style="color: white; font-size: 24px;">Sign up for free to start managing <br> your tasks efficiently.</h3>
+        
+        <p>Already have an account? <a href="/login" style="text-decoration: none;color:white;margin:0 5px ;border:1px solid rgb(93, 157, 241);padding:2px 5px;">Login</a></p>
+        <hr width="450px" style="margin-bottom: 40px;">
+        <form class="form" method="POST" action="/register" onsubmit="return validateForm()">
+            <div class="box">
+                <label for="nameInput" class="text" style="margin: 30px 10vw;">What should we call you?</label>
+                <label for="emailInput" class="text" style="margin: 30px 12vw;">What's your email</label>
+                <br>
+                <input class="input-box" type="text" name="name" id="nameInput" style="margin-bottom: -10px;"
+                    placeholder="Enter a profile name" />
+
+                <input class="input-box" type="text" name="email" id="emailInput" placeholder="Enter your email" />
+            </div>
+            <div class="box">
+                <label for="phoneInput" class="text" style="margin: 20px 10vw 30px 10vw;">What's your Phone
+                    Number</label>
+                <label for="dateInput" class="text" style="margin: 20px 15vw 20px 12vw;">Enter your DOB</label>
+                <br>
+                <input class="input-box" type="number" name="phone" id="phoneInput"
+                    placeholder="Enter your Phone Number" />
+                <input type="date" class="dob" name="dob" id="dateInput">
+            </div>
+            <label for="aboutInput" class="text" style="margin: 20px 10vw;">About Yourself</label>
+            <textarea name="about" class="about-box" id="aboutInput" cols="36" rows="8"
+                placeholder="Write something interesting about yourself"></textarea>
+            <br>
+            <label for="taskInput" class="text" style="margin: 20px 10vw;">Preferred Task Types</label>
+            <select class="select-box" name="task" id="taskInput">
+                <option value="all">ALL</option>
+                <option value="work">WORK</option>
+                <option value="study">STUDY</option>
+                <option value="personal">PERSONAL</option>
+            </select>
+            <br>
+            <label class="text" style="margin: 4vh 0 3vh 0;">Gender</label>
+            <div class="gender">
+                <label for="maleInput" class="radio-inline">
+                    <input type="radio" name="gender" id="maleInput" value="male">Male
+                </label>
+                <label for="femaleInput" class="radio-inline">
+                    <input type="radio" class="radio-inline" name="gender" id="femaleInput" value="female">Female
+                </label>
+            </div>
+            <br>
+            <label for="passwordInput" class="text" style="margin: 4vh 10vw 0px 10vw;">Create a password</label>
+            <input class="input-box" type="password" name="password" id="passwordInput" placeholder="Create a password">
+
+            <br>
+            <button class="submit" id="registerButton" type="submit"> REGISTER </button>
+        </form>
+    </div>
+
+    <script>
+        
+        const phoneNumberRegex = /^\d{10}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]/;
+
+        const validateForm = () =>{
+
+            const nameInp = document.getElementById('nameInput').value
+            const phoneInp = document.getElementById('phoneInput').value 
+            const emailInp = document.getElementById('emailInput').value
+            const radioInp = document.getElementsByName('gender')
+            const passwordInp = document.getElementById('passwordInput').value
+
+            
+            if(nameInp == ""){
+                alert("Please enter your name !")
+                return false;
+            }
+
+            if( ! phoneNumberRegex.test(phoneInp)){
+                
+                alert("Please enter valid Phone Number !")
+                return false;
+            }
+
+            if( ! emailRegex.test(emailInp)){
+                
+                alert("Please enter valid email !")
+                return false;
+            }
+
+            var isChecked = false;
+            for (var i = 0; i < radioInp.length; i++) {
+                console.log(radioInp[i])
+                if (radioInp[i].checked) {
+                    isChecked = true;
+                    break;
+                }
+            }
+            if (!isChecked) {
+                alert("Please select a gender !");
+                return false;
+            }
+
+            if(passwordInp == ""){
+                alert("Please enter a password !")
+                return false;
+            }
+
+
+            return true;  // Submit form to backend(server side) if validation in client side passes.            
+        }
+
+    </script>
+
+    <!-- <script type="text/javascript" src="/js/register.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../images/body_bg.webp');
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.heading{
+    margin: 20vh 0vw 0vh 6vw;
+    color: #121212;
+    letter-spacing: 5px;
+    font-size: 100px;
+    text-shadow: -2px 3px 5px darkturquoise, 2px -2px 4px darkturquoise;
+}
+
+.register-box{
+    position: relative;
+    left: 8%;
+    top: 15%;
+}
+
+.login-box{
+    position: relative;
+    left: 36%;
+    top: -4.5%;
+}
+
+.box-text{
+    font-size: 26px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    margin: 15px 0;
+    text-shadow: -2px 1px 3px darkturquoise, 2px -1px 5px darkturquoise;
+}
+
+.box-button{
+    width: 14vw;
+    height: 5vw;
+    background: none;
+    color: black;
+    font-weight: 100;
+    font-size: larger;
+    border-radius: 3px;
+    border: 1px solid cyan;
+    text-shadow: -2px 1px 0px darkturquoise, 0px 0px 20px darkturquoise;
+}
+
+.box-button:hover{
+    background-color: darkturquoise;
+    color: black;
+    text-shadow: -1px 1px 5px black;
+}
